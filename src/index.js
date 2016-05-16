@@ -138,6 +138,7 @@ function postFromComment (post, match, title = null, url, offset, path) {
     subreddit: post.subreddit,
     thumbnail: getThumbnail(post, url),
     permalink: getPermalink(post, path),
+    over_18: post.over_18,
     // Comment-specific fields
     comment_id: post.id
   }
